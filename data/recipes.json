@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Quick Strong Coffee",
+    "coffee": "18g",
+    "water": "220ml",
+    "grind": "medium-fine",
+    "time": "1.5 min",
+    "steps": "Add coffee, pour hot water, stir, press after 90 seconds",
+    "notes": "Strong and bold flavor"
+  },
+  {
+    "name": "Fruity Light Roast",
+    "coffee": "15g",
+    "water": "250ml",
+    "grind": "medium",
+    "time": "2 min",
+    "steps": "Bloom for 30 seconds, stir, slow press",
+    "notes": "Bright and fruity taste"
+  },
+  {
+    "name": "Low Acidity Brew",
+    "coffee": "16g",
+    "water": "240ml",
+    "grind": "coarse",
+    "time": "2.5 min",
+    "steps": "Use cooler water, longer steep, slow press",
+    "notes": "Smooth and low acidity"
+  }
+]
