@@ -17,9 +17,20 @@ def query_recipes(q: str = "strong coffee"):
 
     results = search(index, query_embedding)
 
-    matched_recipes = [texts[i] for i in results]
+    matched_recipes = [recipes[i] for i in results]
+
+    response_recipes = [{"name": i["name"], "notes": i["notes"]} for i in results]
+
+    context_parts = []
+
+    for recipe in matched_recipes:
+        text = f"{recipe['name']}: {recipe['notes']}"
+        context_parts.append(text)
+
+    context = "\n".join(context_parts)
 
     return {
         "query": q,
-        "results": matched_recipes
+        "recipes": response_recipes,
+        "context": context
     }
